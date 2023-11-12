@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TVU.Models.covanhoctap>
+@{
+    ViewBag.Title = "Thông tin cố vấn học tập";
+}
+
+<div class="row">
+    <div class="thongtincovan">
+        <h1>TRA CỨU THÔNG TIN CỐ VẤN HỌC TẬP</h1>
+        <form method="post" action="@Url.Action("TraCuu", "Home")">
+            <div class="namHoc">
+                <h2>Năm học:</h2>
+                <select name="namhoc">
+                    <option>Chọn năm học</option>
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                    <option value="2022-2023">2022-2023</option>
+                    <option value="2023-2024">2023-2024</option>
+                </select>
+                <h2>Mã lớp:</h2>
+                <select name="malop">
+                    <option>Chọn lớp</option>
+                    @foreach (var item in Model)
+                    {
+                        <option value="@item.maLop">@item.maLop</option>
+                    }
+                </select>
+                <button onclick="window.location.assign('/Home/TraCuu')">Tra Cứu</button>
+
+            </div>
+        </form>
+        <label>Thông tin cố vấn</label>
+    </div>
+</div>

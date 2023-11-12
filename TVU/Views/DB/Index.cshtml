@@ -1,0 +1,67 @@
+﻿@model IEnumerable<TVU.Models.covanhoctap>
+
+@{
+    ViewBag.Title = "Thông tin cố vấn học tập";
+}
+
+<div class="row">
+    <div class="thongtincovan">
+        <h1>TRA CỨU THÔNG TIN CỐ VẤN HỌC TẬP</h1>
+        <div class="namHoc">
+            <h2>Năm học:</h2>
+            <select name="NamHoc">
+                <option>Chọn năm học</option>
+                    @foreach (var item in Model)
+                    {
+                        <option value="@Html.DisplayFor(modelItem => item.namHoc)">@Html.DisplayFor(modelItem => item.namHoc)</option>
+
+                    }
+            </select>
+            <h2>Mã lớp:</h2>
+            <select name="MaLop">
+                <option>Chọn lớp</option>
+                @foreach (var item in Model)
+                {
+                    <option value="@Html.DisplayFor(modelItem => item.maLop)">@Html.DisplayFor(modelItem => item.maLop)</option>
+
+                }
+            </select>
+            <button>Tra cứu</button>
+        </div>
+        <label>Thông tin cố vấn</label>
+        <div class="thongtin">
+            @foreach (var item in Model)
+            {
+                <ul>
+                    <li>
+                        <h1>Tên CVHT:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.tenCVHT)</h2>
+                    </li>
+                    <li>
+                        <h1>Email:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.email)</h2>
+                    </li>
+                    <li>
+                        <h1>Điện thoại:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.dienThoai)</h2>
+                    </li>
+                    <li>
+                        <h1>Quyết định:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.quyetDinh)</h2>
+                    </li>
+                    <li>
+                        <h1>Ghi chú:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.ghiChu)</h2>
+                    </li>
+                    <li>
+                        <h1>Nội dung điều chỉnh:</h1>
+                        <h2>@Html.DisplayFor(modelItem => item.noiDungDieuChinh)</h2>
+                    </li>
+
+                </ul>
+            }
+        </div>
+    </div>
+
+</div>
+

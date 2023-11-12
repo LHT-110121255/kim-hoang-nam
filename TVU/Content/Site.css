@@ -1,0 +1,155 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(https://sistern.netlify.app/static/media/310341772_107466448804566_5814530027112513877_n.a7a151671821b5fc9507.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.info-home {
+    margin-top: 400px;
+}
+.info-home h1 {
+        font-size: 30px;
+        color: #fff;
+        margin-left: 20px;
+}
+.info-home h2 {
+    font-size: 25px;
+    color: #fff;
+
+}
+.footer-lable {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+/*Thông tin cố vấn*/
+.thongtincovan {
+    margin-top: 100px;
+    text-align: center;
+    height: 570px;
+    background: #fff;
+}
+.thongtincovan h1 {
+    background: #001f85;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+}
+.namHoc {
+        display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.namHoc h2 {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #150b8f;
+}
+.namHoc select{
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+.namHoc button {
+    height: 40px;
+    margin-top: 10px;
+    width: 100px;
+    border: 1px solid #090909;
+    border-radius: 10px;
+    background: #bec5cc;
+}
+.namHoc button:hover {
+    background: #ffffff;
+}
+label{
+    font-size: 30px;
+    display: block;
+    float: left;
+    margin-left: 50px;
+        margin-top: 20px;
+        color: #150b8f;
+}
+.thongtin {
+        margin-top: 50px;
+    height: 69%;
+}
+.thongtin ul {
+        margin-top: 50px;
+    height: 100%;
+        margin-left: 30%;
+}
+.thongtin ul li {
+    display: flex;
+        height: 55px;
+
+}
+.thongtin ul li h1 {
+        font-size: 20px;
+    background: none;
+    color: #333;
+    font-weight: 700;
+    width: 230px;
+    text-align: justify;
+
+}
+.thongtin ul li h2 {
+        font-size: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Login*/
+#loginForm {
+        margin-top: 200px;
+}
+.title-dangnhap {
+        font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+        text-align: center;
+}
+.dangnhap {
+        width: 100%;
+    display: block;
+}
+.dangnhap input, .dangnhap button {
+        min-width: 360px;
+    display: block;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 21px;
+    background: #ffffff87;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
