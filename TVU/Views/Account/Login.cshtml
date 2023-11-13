@@ -1,5 +1,8 @@
 ﻿@using TVU.Models
 @model LoginViewModel
+
+
+<--!-->Tên chính của trang </--!-->
 @{
     ViewBag.Title = "Đăng Nhập";
 }
@@ -11,8 +14,7 @@
                     <div class="dangnhap">
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password"/>
-                        <button onclick="window.location.href = '/Home/CongThongTin'">Đăng Nhập</button>
-
+                        <button onclick="window.location.href = '/Home/CongThongTin'">Đăng Nhập</button>  <--!-->Khi nhấn vào button nó sẽ hiện ta trang cổng thông tin </--!-->
                     </div>
         </section>
     </div>

@@ -10,16 +10,16 @@
             <div class="namHoc">
                 <button style="width: 200px !important;" onclick="window.location.href = '/Home/CongThongTin'">Tiếp tục tra cứu</button>
             </div>
-        @if (Model.Any())
+        @if (Model.Any()) /*.Any() kiểm tra xem nó giá trị nào ko */
         {
             <label>Thông tin cố vấn</label>
             <div class="thongtin">
-                 @foreach (var item in Model)
+                 @foreach (var item in Model) /*@Html.DisplayFor == HTMLTEXT*/
                  {
                      <ul>
                          <li>
                              <h1>Tên CVHT:</h1>
-                             <h2>@Html.DisplayFor(modelItem => item.tenCVHT)</h2>
+                             <h2>@Html.DisplayFor(modelItem => item.tenCVHT)</h2> 
                          </li>
                          <li>
                              <h1>Email:</h1>

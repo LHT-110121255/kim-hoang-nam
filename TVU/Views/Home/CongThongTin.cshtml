@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TVU.Models.covanhoctap>
+﻿@model IEnumerable<TVU.Models.covanhoctap> /* lấy bảng covanhoctap gán zo model*/
 @{
     ViewBag.Title = "Thông tin cố vấn học tập";
 }
@@ -20,6 +20,35 @@
                 <select name="malop">
                     <option>Chọn lớp</option>
                     @foreach (var item in Model)
+                    /*Model là mảng chứa thông tin của cố vấn 
+                     * Model = [
+                     * {
+                     * TenCVHT: giá trí,
+                     * Email: giá tri,
+                     * dienthoai: giá tri,
+                     * Quyetdinh: gia tri,
+                     * ghichu: giatri,
+                     * noidungdieuchinh: giá tri,
+                     * },
+                     * {
+                     * malop: gia tri,
+                     * TenCVHT: giá trí,
+                     * Email: giá tri,
+                     * dienthoai: giá tri,
+                     * Quyetdinh: gia tri,
+                     * ghichu: giatri,
+                     * noidungdieuchinh: giá tri,
+                     * }
+                     * {
+                     * TenCVHT: giá trí,
+                     * Email: giá tri,
+                     * dienthoai: giá tri,
+                     * Quyetdinh: gia tri,
+                     * ghichu: giatri,
+                     * noidungdieuchinh: giá tri,
+                     * }...
+                     * ]
+                    */
                     {
                         <option value="@item.maLop">@item.maLop</option>
                     }
